@@ -6,7 +6,7 @@ import Scene from './App';
 
 ReactDOM.render(
   <div id="canvas-container">
-    <Canvas>
+    <Canvas flat camera={{ position: [4, 2, 5] }}>
       <Scene />
     </Canvas>
   </div>,
