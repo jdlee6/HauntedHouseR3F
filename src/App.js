@@ -119,8 +119,9 @@ function Scene() {
   return (
     <>
       <CameraControls />
-      <ambientLight color="#ffffff" intensity={.6} />
-      <directionalLight color="#ffffff" intensity={.5} position={[4, 5, -2]} />
+      <ambientLight color="#b9d5ff" intensity={.12} />
+      <directionalLight color="#b9d5ff" intensity={.12} position={[4, 5, -2]} />
+      <pointLight color="#ff7d46" intensity={1} distance={7} position={[0, 2.2, 2.7]} />
       <House />
       <Graves />
       <Floor />

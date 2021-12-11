@@ -7,6 +7,8 @@ import Scene from './App';
 ReactDOM.render(
   <div id="canvas-container">
     <Canvas flat camera={{ position: [4, 2, 5] }}>
+      <color attach="background" args={["#262837"]} />
+      <fog attach="fog" args={['#262837', 1, 15]} />
       <Scene />
     </Canvas>
   </div>,
