@@ -7,7 +7,13 @@ import * as THREE from 'three';
 
 ReactDOM.render(
   <div id="canvas-container">
-    <Canvas flat shadowMap shadows={{ type: "BasicShadowMap" }} onCreated={({ gl }) => { gl.toneMapping = THREE.NoToneMapping }} camera={{ position: [4, 2, 5] }}>
+    <Canvas
+      flat
+      linear
+      shadowMap
+      shadows={{ type: "BasicShadowMap" }}
+      onCreated={({ gl }) => { gl.toneMapping = THREE.NoToneMapping }}
+      camera={{ position: [4, 2, 5] }}>
       <color attach="background" args={["#262837"]} />
       <fog attach="fog" args={['#262837', 1, 15]} />
       <Suspense fallback={null}>
